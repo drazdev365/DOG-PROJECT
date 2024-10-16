@@ -43,14 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         card.appendChild(commentSection);
 
-        // Post comment functionality
         postButton.addEventListener('click', function() {
             const commentText = inputBox.value.trim();
             if (commentText) {
                 const comment = document.createElement('p');
                 comment.textContent = commentText;
                 commentsDiv.appendChild(comment);
-                inputBox.value = ''; // Clear input box after posting
+                inputBox.value = '';
             }
         });
 
